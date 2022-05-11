@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <script src="js/pageactions.js"></script>
+  <script src="js/database.js"></script>
+  <link rel="stylesheet" href="css/hobbitstyle.css">
+</head>
+<body>
+  
+  <script>
+  var pratileira = new Play();
+  </script>
+
+<section style="display: none;position: absolute" id="carrinho">
+  <div id="main_div">
+    <img src="img/carrinho_medieval.png">
+    <button id="get_out">
+      Sair
+    </button>
+    <div id="content">
+      <h1>Carrinho</h1>
+
+      <div class="produtos" id="div 1">
+        <h2  id="produto 1" ></h2>
+        <h2 id="preço 1" ></h2>
+        <button display="none" id="remove 1"></button>
+      </div>
+
+      <div class="produtos" id="div 2">
+        <h2  id="produto 2" ></h2>
+        <h2 id="preço 2"></h2>
+        <button display="none"  id="remove 2"></button>
+      </div>
+
+      <div class="produtos" id="div 3">
+        <h2  id="produto 3" ></h2>
+        <h2 id="preço 3"></h2>
+        <button display="none"  id="remove 3"></button>
+      </div>
+    </div>
+  </div>
+
+</section>
+  
+  <header id="header">
+    <img src="img/logo.png">
+    <h1>&quot;Há algo de bom neste mundo e vale a<br>pena lutar por isso&quot;</h1>
+    <h2>-Sam</h2>
+    <div id="car&user">
+      <div onclick="show_carrinho(carrinho)"><img style="width:100px;height:100px;" src="img/carrinho.png"></div>
+    </div>
+  </header>
+  
+  <nav id="nav">
+    <h3>Categorias</h3>
+     <ul>
+       <li onclick="pratileira.get_book()">Livros</li>
+       <li onclick="pratileira.get_aces()">Acessórios</li>
+       <li onclick="pratileira.get_cosplay()">Cosplay</li>
+       <li onclick="pratileira.get_action_figure()">Action Figures</li>
+       <li onclick="pratileira.get_tudo()">Tudo</li>
+     </ul>
+  </nav>
+  <br>
+  
+
+  <section id="seção_principal">
+    <section class="produtos" id="Livro"></section>
+    <section class="produtos" id="Acessório"></section>
+    <section class="produtos" id="Cosplay"></section>
+    <section class="produtos" id="Action Figure"></section>
+    <section class="produtos" id="Tudo"></section>
+  </section>
+
+  <script>
+  add_section(produtos, carrinho)
+  choose_section("Tudo")
+  </script>
+
+  <div id="gandalf">
+    <img src="img/Gandalf.png">
+  </div>
+  
+
+</body>
+</html>
