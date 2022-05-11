@@ -1,0 +1,162 @@
+@font-face {
+  font-family:"Lobster";
+
+  src: url("../fonts/Lobster.otf") format("opentype");
+  font-weight: normal;
+  font-style: none;
+}
+
+body{
+  background-image: url("../img/page-background.png");
+  background-repeat: no-repeat;
+  background-size:150%;
+}
+
+
+nav{
+  background:rgba(34,38,3,0.8);
+  position: absolute;
+  display: block;
+  align-items: center;
+  text-align: center;
+  width:190px;
+  height: 60%;
+  left:20px;
+  top:180px;
+  padding-bottom:50px;
+  color:white;
+}
+
+ul{
+  position: relative;
+  left:-25px;
+}
+
+li{
+  background:grey;
+  width:160px;
+  height:50px;
+  text-align:center;
+  margin-top:25px;
+  font-size:16pt;
+  list-style: none;
+  padding-top: 10px;
+  font-weight: bold;
+} 
+
+.produtos div{
+  background: rgba(255,255,255,0.2);
+  width: 180px;
+  height: 220px;
+  margin-left: 40px;
+  margin-top: 50px;
+  border-radius: 2px;
+}
+
+.produtos{
+  max-width: 1000px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+#seção_principal{
+  position:absolute;
+  top:135px;
+  margin-left:240px;
+  margin-bottom: 30px;
+}
+
+header{
+  display: flex;
+}
+
+header img{
+  width:150px;
+  height: 150px;
+  margin-left: 20px;
+}
+
+header h1{
+  font-size: 20pt;
+  color: white;
+  font-family:Lobster;
+  font-weight: 150;
+}
+
+header h2{
+  position: relative;
+  font-family: Lobster;
+  font-weight: 150;
+  top:70px;
+  left:-390px;
+  color: white;
+}
+
+header div[id="car&user"]{
+  position:relative;
+  left:37%;
+  display: flex;
+}
+
+#carrinho div[id="main_div"] img{
+  width: 800px;
+  height: 800px;
+  
+  
+}
+
+#carrinho{
+  left: 430px;
+  top: 50px;
+}
+
+#carrinho div[id="main_div"] div[id="content"]{
+  position: relative;
+  top: -650px;
+  left: 100px;
+  align-items: right;
+}
+
+#carrinho div[id="main_div"] div[id="content"] h1{
+  position: relative;
+  font-size: 30pt;
+  left:200px;
+  top: -60px;
+  width: 200px;
+}
+
+#carrinho div[id="main_div"] div[id="content"] div[class="produtos"]{
+  display: flex;
+  justify-content: space-around;
+  font-size: 13pt;
+  width: 600px;
+}
+
+#carrinho div[id="main_div"] div[id="content"] div[class="produtos"] button{
+  display: none;
+  background:rgba(0,51,25,0.5);
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 50px;
+  color:white;
+}
+
+#carrinho div[id="main_div"] button[id="get_out"]{
+  background: chocolate;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  width: 100px;
+  height: 50px;
+  color:white;
+  position: relative;
+  top:-680px;
+  left: -700px;
+}
+
+#gandalf{
+  position: relative;
+  left: 1100px;
+}
